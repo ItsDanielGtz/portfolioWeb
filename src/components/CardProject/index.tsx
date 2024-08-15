@@ -18,10 +18,10 @@ interface CardProject {
   image: string;
   technologies: string[];
   images: string[];
-  link: string
+  link: string;
 }
 
-export default function CardProject({projects}: {projects:CardProject[]} ) {
+export default function CardProject({ projects }: { projects: CardProject[] }) {
   const [selectedProject, setSelectedProject] = useState<CardProject | null>(
     null
   );
@@ -62,7 +62,7 @@ export default function CardProject({projects}: {projects:CardProject[]} ) {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 text-primary-foreground px-4 py-2 rounded-md hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 bg-secondary/55 text-black "
+                className="mt-4 px-4 py-2 rounded-md hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 bg-secondary/55 text-black"
               >
                 Ir al sitio web
               </a>
